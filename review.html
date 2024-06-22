@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>rohan joshi</title>
+</head>
+<body>
+
+<!-- menu open -->
+
+	<nav class="navbar navbar-expand-md menu">
+      
+      <a class=" logo navbar-brand" href="#"><img src="img/logo.png" width="100%"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse " id="navbarsExample04">
+        <ul class="navbar-nav m-auto">
+          <li class="nav-item "><a class="nav-link" href="index.html">HOME</a></li>
+          <li class="nav-item "><a class="nav-link" href="room.html">ROOMS</a></li>
+          <li class="nav-item "><a class="nav-link" href="food.html">FOOD</a></li>
+          <li class="nav-item "><a class="nav-link" href="review.html">REVIEW</a></li>
+          <li class="nav-item "><a class="nav-link" href="contact.html">CONTACT</a></li>
+          
+        </ul>
+        <form class="form-inline my-2 my-md-0">
+          <input class="form-control" type="text" placeholder="Search">
+        </form>
+      </div>
+      
+    </nav>
+
+	<!-- menu close -->
+   
+
+   <!-- carousel start  -->
+  <div class="container">
+  <div id="testimonials">      
+  </div>
+</div>
+
+    <!--carousel end  -->
+
+
+  <!-- 1st section start  -->
+  
+  <div class="container">
+<p style="text-align: center; padding: 30px 90px; font-weight: bold; font-style: italic;">
+  We strive to provide the best possible service for our clients. Please leave a review to let us know how we are doing and to share your experience with others.
+</p>
+<form id="review-form" action="index.html" method="post">
+  <h2>Write Your Review</h2>
+  <div id="rating">
+    <svg class="star" id="1" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+      <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+    </svg>
+    <svg class="star" id="2" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+      <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+    </svg>
+    <svg class="star" id="3" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+      <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+    </svg>
+    <svg class="star" id="4" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #f39c12;">
+      <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+    </svg>
+    <svg class="star" id="5" viewBox="0 12.705 512 486.59" x="0px" y="0px" xml:space="preserve" style="fill: #808080;">
+      <polygon points="256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566"></polygon>
+    </svg>
+  </div>
+  <span id="starsInfo" class="help-block">
+    Click on a star to change your rating 1 - 5, where 5 = great! and 1 = really bad
+  </span>
+  <div class="form-group">
+    <label class="control-label" for="review">Your Review:</label>
+    <textarea class="form-control" rows="10" placeholder="Your Reivew" name="review" id="review"></textarea>
+    <span id="reviewInfo" class="help-block pull-right">
+      <span id="remaining">999</span> Characters remaining
+    </span>
+  </div>
+  <h2>Your Info:</h2>
+  <div class="form-group">
+    <label for="name">Name:</label>
+    <input class="form-control" type="text" placeholder="Name" name="name" id="name" value="">
+  </div>
+  <div class="form-group">
+    <label for="city">City:</label>
+    <input class="form-control" type="text" placeholder="City" name="city" id="city" value="">
+  </div>
+  <div class="form-group">
+    <label for="email">Email:</label>
+    <input class="form-control" type="text" placeholder="Email" name="email" id="email" value="">
+  </div>
+  <a href="#" id="submit" class="btn btn-primary">Submit</a>
+  <input id="submitForm" type="submit" style="display:none;">
+  <span id="submitInfo" class="help-block">
+    By clicking <strong>Submit</strong>, I authorize the sharing of my name and review on the web. (email will not be shared)
+  </span>
+</form>
+<h2>Read what others have said about us:</h2>
+<div id="review-container">
+</div>
+</div>
+
+
+  <!-- 1st section end -->
+
+  <!-- video section start -->
+ 
+ <div class="video">
+
+  <div class="container">
+
+    <h1>Video's</h1>
+
+    <div class="row">
+
+      <div class="col-md-6 mt-4">
+
+           <div class="o-video">
+         <iframe src="https://www.youtube.com/embed/t1Vfcx1dyNk" width="100%" allowfullscreen></iframe>
+       </div>
+    
+    </div>
+
+    <div class="col-md-6 mt-4">
+
+           <div class="o-video">
+         <iframe src="https://www.youtube.com/embed/QdbsevEUwj0" width="100%" allowfullscreen></iframe>
+       </div>
+    
+    </div>
+
+
+  </div>
+
+</div>
+
+</div>
+
+  <!-- video section end -->
+
+
+
+  <!-- footer start -->
+
+
+    <div class="container">
+
+      <footer class="pt-4 my-md-5 pt-md-5 border-top">
+        <div class="row">
+          <div class="col-12 col-md text-center">
+            <img class="mb-2 img-fluid" src="img/logo.png" alt="" width="30%">
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Features</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Cool stuff</a></li>
+              <li><a class="text-muted" href="#">Random feature</a></li>
+              <li><a class="text-muted" href="#">Team feature</a></li>
+              <li><a class="text-muted" href="#">Stuff for developers</a></li>
+              <li><a class="text-muted" href="#">Another one</a></li>
+              <li><a class="text-muted" href="#">Last time</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>Resources</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Resource</a></li>
+              <li><a class="text-muted" href="#">Resource name</a></li>
+              <li><a class="text-muted" href="#">Another resource</a></li>
+              <li><a class="text-muted" href="#">Final resource</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md">
+            <h5>About</h5>
+            <ul class="list-unstyled text-small">
+              <li><a class="text-muted" href="#">Team</a></li>
+              <li><a class="text-muted" href="#">Locations</a></li>
+              <li><a class="text-muted" href="#">Privacy</a></li>
+              <li><a class="text-muted" href="#">Terms</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="my-5 text-muted text-center text-small">
+        <p class="mb-1">&copy; 2017-2018 Company Name</p>
+        <ul class="list-inline">
+          <li class="list-inline-item"><a href="#">Privacy</a></li>
+          <li class="list-inline-item"><a href="#">Terms</a></li>
+          <li class="list-inline-item"><a href="#">Support</a></li>
+        </ul>
+      </div>
+      </footer>
+    </div>
+
+    <!-- footer end -->
+
+</body>
+<script type="text/javascript" src="js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+ 
+ <!-- carousel script start -->
+
+<script type="text/javascript">
+  const testimonials = [
+    {
+        text:
+            "Thank you for your warm hospitality and the excellent service you've rendered to us during our stay. You are all very friendly, attentive, and helpful. You made our stay very pleasant and comfortable. Chef Lek is amazing - we enjoyed all the traditional Thai cuisines prepared by her. Villa M has a magnificent view and just views the serene water beneath the lovely sunset.",
+        star: 5
+    },
+    {
+        text:
+            "It is an understatement to say what a wonderful time we had from the moment we walked in. We were taken care of in every possible way. The most memorable part of the trip was the kindness and care you showed us. The villa was pretty nice too. Thank you for the great time. See you next time!",
+        star: 3
+    },
+    {
+        text:
+            "Thank you for the fantastic service provided during our stay. The villa is a masterpiece of elegance, boasting spacious rooms, modern amenities, and exquisite decor. But what truly sets the experience apart is the warm welcome and attentive assistance throughout our stay. Every detail is catered to with utmost care and professionalism. This is indeed an indulgence in a very memorable retreat where every moment feels like a dream come true.",
+        star: 4
+    }
+];
+
+(function(arr) {
+    const target = document.getElementById("testimonials");
+    target.classList.add("text-center");
+
+    const fragment = document.createDocumentFragment();
+    
+    // Get all the templates
+    arr.forEach((item, index, arr) => {
+        createTestimonialTemplate(item);
+    });
+
+    // Templates
+    function createTestimonialTemplate({ star, text }) {
+        const div = document.createElement("div");
+        div.classList.add("testimonial");
+        div.classList.add("d-none");
+        
+        // Stars template
+        const starsWrapper = document.createElement("div");
+        starsWrapper.classList.add("stars-wrapper", "mt-5");
+        while (star--) {
+            const starWrapper = document.createElement("div");
+            starWrapper.classList.add("star-wrapper");
+            
+            const starIcon = document.createElement("i");
+            starIcon.classList.add("fa", "fa-star", "star");
+            starWrapper.appendChild(starIcon);
+            
+            const insideStar = document.createElement("i");
+            insideStar.classList.add("fa", "fa-star", "inside-star");
+            starWrapper.appendChild(insideStar);
+            
+            starsWrapper.appendChild(starWrapper);
+        }
+        div.appendChild(starsWrapper);
+        
+        // Text template
+        const p = document.createElement("p");
+        p.classList.add("mt-4");
+        p.textContent = text;
+        div.appendChild(p);
+        
+        // Append template
+        fragment.appendChild(div);
+    }
+    
+    target.appendChild(fragment);
+    
+    // Animation
+    function animation(){
+        const timeTestimonialAppear = 10000;
+        [...target.children].forEach((item, index, arr) => {
+
+            // Appear
+            const timerAppearing = setTimeout(function(){
+                
+                // Appearing
+                item.classList.remove("d-none");
+                
+                // Animation
+                const stars = item.querySelectorAll(".star-wrapper");
+                let starsLength = stars.length;
+                
+                // Star appearing
+                setTimeout(function() {
+                    for (let i = 0; i < starsLength; i++) {
+                        setTimeout(function(){
+                            stars[i].classList.add("active");
+                        }, 250 * i)
+                    }
+                }, 250) 
+                
+                // Star disappearing
+                setTimeout(function() {
+                    for (let i = 0; i < starsLength; i++) {
+                        setTimeout(function(){
+                            stars[i].classList.remove("active");
+                        }, 250 * i)
+                    }     
+                }, timeTestimonialAppear - 250 * (starsLength + 1));
+                
+                // Paragraph
+                const par = item.querySelector("p");
+                setTimeout(function() {
+                    par.classList.add("active");
+                }, 250)
+                
+                setTimeout(function() {
+                    par.classList.remove("active");
+                }, timeTestimonialAppear - 250 * (starsLength + 1));
+                
+                // Disappearing testimonial
+                // If the first item or not the first item
+                if (index === 0) {
+                    arr[arr.length - 1].classList.add("d-none");
+                } else {
+                    arr[index - 1].classList.add("d-none");
+                }
+                
+                // If the last item
+                if (index === arr.length - 1) {
+                    clearTimeout(timerAppearing);
+                    // Infinit loop
+                    setTimeout(animation, timeTestimonialAppear);
+                }
+                
+            },timeTestimonialAppear * index);
+        })
+    }
+    
+    setTimeout(animation, 2000);
+    
+})(testimonials);
+</script>
+
+<!-- carousel script end -->
+
+<!-- 1st section script start -->
+  <script type="text/javascript">
+    function starsReducer(state, action) {
+    switch (action.type) {
+      case 'HOVER_STAR': {
+        return {
+          starsHover: action.value,
+          starsSet: state.starsSet
+        }
+      }
+      case 'CLICK_STAR': {
+        return {
+          starsHover: state.starsHover,
+          starsSet: action.value
+        }
+      }
+        break;
+      default:
+        return state
+    }
+  }
+
+  var StarContainer = document.getElementById('rating');
+  var StarComponents = StarContainer.children;
+
+  var state = {
+    starsHover: 0,
+    starsSet: 4
+  }
+
+  function render(value) {
+    for(var i = 0; i < StarComponents.length; i++) {
+      StarComponents[i].style.fill = i < value ? '#f39c12' : '#808080'
+    }
+  }
+
+  for (var i=0; i < StarComponents.length; i++) {
+    StarComponents[i].addEventListener('mouseenter', function() {
+      state = starsReducer(state, {
+        type: 'HOVER_STAR',
+        value: this.id
+      })
+      render(state.starsHover);
+    })
+
+    StarComponents[i].addEventListener('click', function() {
+      state = starsReducer(state, {
+        type: 'CLICK_STAR',
+        value: this.id
+      })
+      render(state.starsHover);
+    })
+  }
+
+  StarContainer.addEventListener('mouseleave', function() {
+    render(state.starsSet);
+  })
+
+  var review = document.getElementById('review');
+  var remaining = document.getElementById('remaining');
+  review.addEventListener('input', function(e) {
+    review.value = (e.target.value.slice(0,999));
+    remaining.innerHTML = (999-e.target.value.length);
+  })
+
+  var form = document.getElementById("review-form")
+
+  form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    let post = {
+      stars: state.starsSet,
+      review: form['review'].value,
+      name: form['name'].value,
+      city: form['city'].value,
+      email: form['email'].value
+    }
+
+    console.log(post)
+  })
+
+  document.getElementById('submit').addEventListener('click', function(e) {
+    e.preventDefault();
+    document.getElementById('submitForm').click();
+  })
+
+  var reviews = {
+    reviews: [
+      {
+        stars: 3,
+        name: 'kaveri jaha',
+        city: 'badlapur',
+        review: 'Thank you for the great hospitality and good services. Great location and easy to everywhere.'
+      },{
+        stars: 4,
+        name: 'sanket sanap',
+        city: 'nashik',
+        review: 'Thank you so much for a wonderful time. Edi, Andi, and the team were so attentive and kind.'
+      },{
+        stars: 2,
+        name: 'manik',
+        city: 'mumbai',
+        review: ' Made and Putri are always smiling. The Villa was amazing. Hope to come back soon.'
+      },
+    ]
+  }
+
+  function ReviewStarContainer(stars) {
+    var div = document.createElement('div');
+    div.className = "stars-container";
+    for (var i = 0; i < 5; i++) {
+      var svg = document.createElementNS("http://www.w3.org/2000/svg", "svg");
+      svg.setAttribute('viewBox',"0 12.705 512 486.59");
+      svg.setAttribute('x',"0px");
+      svg.setAttribute('y',"0px");
+      svg.setAttribute('xml:space',"preserve");
+      svg.setAttribute('class',"star");
+      var svgNS = svg.namespaceURI;
+      var star = document.createElementNS(svgNS,'polygon');
+      star.setAttribute('points', '256.814,12.705 317.205,198.566 512.631,198.566 354.529,313.435 414.918,499.295 256.814,384.427 98.713,499.295 159.102,313.435 1,198.566 196.426,198.566');
+      star.setAttribute('fill', i < stars ? '#f39c12' : '#808080');
+      svg.appendChild(star);
+      div.appendChild(svg);
+    }
+    return div;
+  }
+
+  function ReviewContentContainer(name, city, review) {
+
+    var reviewee = document.createElement('div');
+    reviewee.className = "reviewee footer";
+    reviewee.innerHTML  = '- ' + name + ', ' + city
+
+    var comment = document.createElement('p');
+    comment.innerHTML = review;
+
+    var div = document.createElement('div');
+    div.className = "review-content";
+    div.appendChild(comment);
+    div.appendChild(reviewee);
+
+    return div;
+  }
+
+  function ReviewsContainer(review) {
+    var div = document.createElement('blockquote');
+    div.className = "review";
+    div.appendChild(ReviewStarContainer(review.stars));
+    div.appendChild(ReviewContentContainer(review.name,review.city,review.review));
+    return div;
+  }
+
+  for(var i = 0; i < reviews.reviews.length; i++) {
+    document.getElementById('review-container').appendChild(ReviewsContainer(reviews.reviews[i]))
+  }
+  </script>
+<!-- 1st section script end -->
+</html>
